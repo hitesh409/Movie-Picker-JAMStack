@@ -5,9 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{title}}</title>
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
 </head>
 <body>
-   {{content | safe}}
+    <nav class="navbar" >
+    <ul class="navbar-list" > 
+        <a class="navbar-list-item" href="/index"><li>Random Movie</li> </a>
+        <a class="navbar-list-item" href="/action"><li>Action Movie</li> </a>
+        <a class="navbar-list-item" href="/adventure"><li>Adventure Movie</li> </a>
+        <a class="navbar-list-item" href="/comedy"><li>Comedy Movie</li> </a>
+    </ul>
+    </nav>
+    <div class="content">
+        <h1>Hello, welcome to the movie Picker!</h1>
+        <h2>Here are your movies:</h2>
+        {{content | safe}}
+    </div>
 </body>
 
 </html>
