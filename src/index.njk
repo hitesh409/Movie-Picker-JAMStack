@@ -6,22 +6,34 @@ layout : base.njk
     
     {% for movie in data.actionMovie %}
         <div id=action{{loop.index0}} class="hide" >
-            <h1>{{movie.title}}</h1>
-            <img src=https://image.tmdb.org/t/p/w500/{{movie.poster_path}}></img>
+            <div class="img-card">
+                <div classname="img">
+                    <img src=https://image.tmdb.org/t/p/w500/{{movie.poster_path}} width=300px height=400px></img>
+                </div>
+                <h4>{{movie.title}}</h4>
+            </div>
         </div>
     {% endfor %}
 
     {% for movie in data.adventureMovie %}
         <div id=adventure{{loop.index0}} class="hide">
-            <h1>{{movie.title}}</h1>
-            <img src=https://image.tmdb.org/t/p/w500/{{movie.poster_path}}></img>
+            <div class="img-card">
+                <div classname="img">
+                    <img src=https://image.tmdb.org/t/p/w500/{{movie.poster_path}} width=300px height=400px></img>
+                </div>
+                <h4>{{movie.title}}</h4>
+            </div>
         </div>
     {% endfor %}
 
     {% for movie in data.comedyMovie %}
         <div id=comedy{{loop.index0}} class="hide">
-            <h1>{{movie.title}}</h1>
-            <img src=https://image.tmdb.org/t/p/w500/{{movie.poster_path}}></img>
+            <div class="img-card">
+                <div classname="img">
+                    <img src=https://image.tmdb.org/t/p/w500/{{movie.poster_path}} width=300px height=400px></img>
+                </div>
+                <h4>{{movie.title}}</h4>
+            </div>
         </div>
     {% endfor %}
     <script src="/js/index.js"></script>
